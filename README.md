@@ -27,3 +27,17 @@ Restoring on Windows
 5. Run download.py to download NEOS and flashing tools
 6. Put your device into fastboot mode by turning off your device, then holding volume down + power.
 7. Run flash.ps1 (right click, run with powershell). DO NOT DISCONNECT THE DEVICE!
+
+```
+git clone git clone git@github.com:kuasha/eon-neos.git
+git checkout r081
+
+$./download.py 
+downloading https://commadist.azureedge.net/neosupdate/recovery-db31ffe79dfd60be966fba6d1525a5081a920062b883644dc8f5734bcc6806bb.img with hash db31ffe79dfd60be966fba6d1525a5081a920062b883644dc8f5734bcc6806bb
+..hash check pass
+downloading https://commadist.azureedge.net/neosupdate/ota-signed-e28337bbf4c776940f10562437b53cc61e7ae25752fc96897bd350296fa41292.zip with hash e28337bbf4c776940f10562437b53cc61e7ae25752fc96897bd350296fa41292
+
+$./flash.sh
+[8:53 PM]
+https://smiskol.com/fork/commaai/v0.8.1
+```
